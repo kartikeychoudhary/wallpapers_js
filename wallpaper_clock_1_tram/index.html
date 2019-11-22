@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<style type="text/css">
+		@font-face {
+			font-family: font1;
+			src: url('assets/font3.ttf') format('truetype');
+		}
+
+
+
+		body,
+		html {
+			height: 100%;
+			margin: 0;
+
+		}
+
+		.bg {
+			background: url("wall.jpg");
+			height: 100%;
+			/* Center and scale the image nicely */
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		#clock {
+			color: #ffffff;
+			position: absolute;
+			top: 70%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			/* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+
+			font-size: 120px;
+			font-family: font1;
+			padding: 0px 5px 0px 5px;
+			-webkit-animation: clock 1s ease-in-out infinite alternate;
+			-moz-animation: clock 1s ease-in-out infinite alternate;
+			animation: clock 1s ease-in-out infinite alternate;
+		}
+
+		@-webkit-keyframes clock {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+	</style>
+</head>
+
+<body>
+	<div class=bg>
+		<div id="clock"></div>
+
+
+	</div>
+	<script src="script.js"></script>
+
+</body>
+
+</html>
